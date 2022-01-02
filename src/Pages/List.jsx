@@ -20,9 +20,9 @@ export default function List() {
         {products.map((product) => {
           return (
             <div key={product.id}>
-              <img src={products.image} width={100} alt={product.title} />
+              <img src={product.image} width={100} alt={product.title} />
               <p>${product.price}</p>
-              <Link to={`/product/${product.id}`}>{product.title}</Link>
+              <Link to={`/products/${product.id}`}>{product.title}</Link>
             </div>
           );
         })}
