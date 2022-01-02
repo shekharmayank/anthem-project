@@ -14,7 +14,7 @@ function App() {
       <ProductInCart.Provider value={[cart, setCart]}>
         <Router>
           <Switch>
-            <Route path={"/product/:id"}>
+            <Route path={"/products/:id"}>
               <View />
             </Route>
             <Route path={"/cart"}>
